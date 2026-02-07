@@ -1,16 +1,15 @@
 # Embedded Sentry System
 
 ## Overview
-The Embedded Sentry System is an embedded project designed to monitor and track motion using gyroscopic sensors, process the raw data, and trigger responses based on predefined gestures. This system is part of the final project for the embedded systems course. The main goal of this project is to demonstrate the integration of gyroscopes with embedded systems and enable real-time gesture recognition to unlock the system.
+Gesture-based security system on the STM32F429i Discovery (ARM Cortex-M4). Uses gyroscope data to recognize predefined motion patterns for system access control. Built with PlatformIO.
 
-## Features 
-The system provides several key capabilities:
+## Features
 
-- Gyroscope Data Capture: Advanced sensor integration captures and processes raw motion data in real-time
-- Gesture Recognition: Smart recognition system identifies predefined gestures to control system access
-- Real-Time Feedback: Immediate system response to detected gestures provides seamless interaction
-- Data Logging: Comprehensive logging of raw sensor data enables detailed analysis and debugging
-- Configuration & Utilities: Flexible system settings and utility functions support core operations
+- Real-time gyroscope data capture and processing (L3GD20 sensor)
+- Gesture recognition for system access control
+- LCD display output (ILI9341) and touch screen interface (STMPE811)
+- Serial data logging for analysis and debugging
+- Configurable gesture thresholds and calibration
 
 ## Project Structure
 The project consists of the following key components:
@@ -33,7 +32,7 @@ Before installing, ensure you have:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/embedded-sentry.git
+   git clone https://github.com/XhovaniM8/embedded-sentry.git
    cd embedded-sentry
    ```
 
